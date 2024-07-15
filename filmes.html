@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes - Ordnaryblock</title>
+    <link rel="icon" type="image/x-icon" href="F/ordal.ico">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-image: url('F/background-filmes.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 20px 20px 60px 20px;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-align: left;
+        }
+
+        .header-title {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        .header-title h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-section {
+            padding: 0;
+            margin: 0;
+            flex-grow: 1; /* Para ocupar todo o espaço disponível */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza os elementos verticalmente */
+            justify-content: center; /* Centraliza os elementos horizontalmente */
+            text-align: center;
+        }
+
+        .project-section.ruptura {
+            background-image: url('F/ruptura-background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .project-section.ascensao {
+            background-image: url('F/ascensao-background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .project-section.outros {
+            background-image: url('F/outros-background.jpg');
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 20px; /* Espaço extra para o footer */
+        }
+
+        .project-section h2 {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .project-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin: 0;
+            flex-grow: 1; /* Para ocupar todo o espaço disponível */
+        }
+
+        .card {
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .card button {
+            background-color: #1e88e5;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #1565c0;
+        }
+
+        footer {
+            background-color: #2e2e2e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: auto; /* Coloca o footer no final da página */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ordnaryblock</h1>
+        <div class="header-title">
+            <h2>Filmes</h2>
+        </div>
+    </header>
+    <section class="main-content">
+        <div class="project-section ruptura">
+            <h2>Ruptura</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <img src="F/ruptura-filmes.jpg" alt="Filmes Ruptura">
+                    <button onclick="window.location.href='filmes-ruptura.html'">Filmes</button>
+                </div>
+                <div class="card">
+                    <img src="F/ruptura-historia.jpg" alt="História Ruptura">
+                    <button>Em Breve</button>
+                </div>
+            </div>
+        </div>
+        <div class="project-section ascensao">
+            <h2>Ascensão</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <img src="F/ascensao-filmes.jpg" alt="Filmes Ascensão">
+                    <button onclick="window.location.href='Filmes-ascensao.html'">Filmes</button>
+                </div>
+                <div class="card">
+                    <img src="F/ascensao-historia.jpg" alt="História Ascensão">
+                    <button>Em Breve</button>
+                </div>
+            </div>
+        </div>
+        <div class="project-section outros">
+            <h2>Outros Projetos</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <img src="F/outros-projetos.jpg" alt="Outros Projetos">
+                    <button>Em Breve</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Ordinaryblock 2024</p>
+    </footer>
+</body>
+</html>

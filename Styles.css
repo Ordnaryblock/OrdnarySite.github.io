@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    padding: 0 20px; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('header-background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    height: 100px; 
+}
+
+.profile-container, .youtube-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic, .youtube-pic {
+    width: 80px;
+    height: 80px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 0 20px; 
+    border-radius: 10px; 
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header-content h1 {
+    margin: 0;
+}
+
+.main-content {
+    text-align: center;
+    padding: 0; /* Remover padding extra */
+}
+
+.announcement {
+    padding: 20px;
+    margin: 0; /* Remover margem extra */
+    border-radius: 0; /* Remover bordas arredondadas */
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    background-image: url('announcement-background.jpg'); /* Adicione o caminho para sua imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a seção */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+.release-button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.release-button:hover {
+    background-color: #e68900;
+}
+
+.projects {
+    margin: 0; /* Remover margem extra */
+    padding: 20px;
+    background-color: white;
+    border-radius: 0; /* Remover bordas arredondadas */
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    text-align: center;
+    width: 30%;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #2e2e2e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

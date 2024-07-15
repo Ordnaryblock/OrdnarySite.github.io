@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url('F/path_to_background_image.jpg') no-repeat center center fixed; /* Substitua pelo caminho da imagem de fundo */
+            background-size: cover;
+        }
+        h1 {
+            margin: 20px 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+        h6 {
+            color: #FF0000;
+            margin-bottom: 10px;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .era-ordnary {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 10px;
+            padding: 5px 10px;
+            background: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+            border-radius: 5px;
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            color: #000;
+        }
+        .grid-personagens {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 60px 20px 20px; /* Adiciona padding no topo para não sobrepor "Era Ordnary" */
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+            border-radius: 10px;
+            max-width: 1200px; /* Limita a largura máxima da grade */
+            width: 100%; /* Garante que a grade ocupe a largura total disponível */
+        }
+        .personagem-item {
+            background: url('F/ft.png') no-repeat center center; /* Substitui a cor de fundo por uma imagem */
+            background-size: cover; /* Garante que a imagem cubra todo o fundo */
+            border: 2px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            width: calc(25% - 20px); /* Ajusta a largura dos itens para 4 por linha, considerando o gap */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .personagem-item:hover {
+            transform: scale(1.05);
+        }
+        .personagem-item img {
+            width: 100%;
+            height: auto;
+        }
+        .personagem-item p {
+            margin: 10px 0 0;
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personagens</h1>
+    <div class="container">
+        <div class="era-ordnary">Era Ordnary</div>
+        <div class="grid-personagens">
+            <div class="personagem-item" onclick="location.href='P/ordnary.html'">
+                <img src="P/ordnary.jpg" alt="Ordinary">
+                <p>Ordnary</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/charllety.html'">
+                <img src="P/charllety.jpg" alt="Charllety">
+                <p>Charllety</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/orduke.html'">
+                <img src="P/orduke.jpg" alt="Orduke">
+                <p>Orduke</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/day.html'">
+                <img src="P/day.jpg" alt="Day">
+                <p>Day</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/entropia.html'">
+                <img src="P/entropia.jpg" alt="entropia">
+                <p>(Em breve)</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/Vex.html'">
+                <img src="P/vex.jpg" alt="vex">
+                <p>(Em breve)</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/kinseler.html'">
+                <img src="P/kinseler.jpg" alt="Kinseler">
+                <p>(Em breve)</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/la.html'">
+                <img src="P/la.jpg" alt="La">
+                <p>(Em breve)</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/williamito.html'">
+                <img src="P/williamito.jpg" alt="WilliaMito">
+                <p>WilliaMito</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/renan.html'">
+                <img src="P/renan.jpg" alt="Renan">
+                <p>Renan</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/helena.html'">
+                <img src="P/helena.jpg" alt="Helena">
+                <p>Helena</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/edu.html'">
+                <img src="P/edu.jpg" alt="Edu">
+                <p>Edu</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/dara.html'">
+                <img src="P/dara.jpg" alt="Dara">
+                <p>Dara</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/paulin.html'">
+                <img src="P/paulin.jpg" alt="Paulin">
+                <p>Paulin</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/chloe.html'">
+                <img src="P/chloe.jpg" alt="Chloe">
+                <p>Chloe</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/censurado.html'">
+                <img src="P/censurado.jpg" alt="Nerd">
+                <p>*Censurado*</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/vitin.html'">
+                <img src="P/vitin.jpg" alt="Vitin">
+                <p>Vitin</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/mya.html'">
+                <img src="P/mya.jpg" alt="Mya">
+                <p>(Em breve)</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/alucardh.html'">
+                <img src="P/alucardh.jpg" alt="Alucardh">
+                <p>Alucardh</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/javes.html'">
+                <img src="P/javes.jpg" alt="Javes">
+                <p>(Em breve)</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/guneforde.html'">
+                <img src="P/guneforde.jpg" alt="Guneforde">
+                <p>(Em breve)</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/afuger.html'">
+                <img src="P/afuger.jpg" alt="Afuger">
+                <p>(Em breve)</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/jorginho.html'">
+                <img src="P/jorginho.jpg" alt="Villager">
+                <p>(Em breve)</p>
+            </div>
+            <div class="personagem-item" onclick="location.href='P/carlos.html'">
+                <img src="P/carlos.jpg" alt="Carlos">
+                <p>(Em breve)</p>
+            </div>
+        </div>
+    </div>
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8690641731860952"
+     crossorigin="anonymous"></script>
+</body>
+</html>
