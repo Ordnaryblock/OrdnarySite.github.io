@@ -53,10 +53,10 @@
         .header-content {
             display: flex;
             align-items: center;
-            padding: 0 20px; 
+            padding: 0 90px; 
             border-radius: 10px; 
             flex-grow: 1;
-            justify-content: center;
+            justify-content: left;
         }
 
         .header-content h1 {
@@ -114,18 +114,17 @@
         }
 
         .card img {
-            width: 100%;
-            border-radius: 10px;
+            width: 90%;
+            border-radius: 1px;
         }
 
         .background-image {
             position: relative;
             width: 100%;
             height: 300px; /* Altura da imagem de fundo */
-            background-image: url('F/Desenvolvedores.png'); /* Caminho da imagem de fundo */
+            background-image: url('F/ord.png'); /* Caminho da imagem de fundo */
             background-size: cover;
             background-position: center;
-            margin-top: 20px; /* Espaço acima da imagem */
         }
 
         .background-link {
@@ -163,15 +162,15 @@
             <img src="F/youtube-icon.png" alt="YouTube Icon" class="youtube-pic">
         </div>
     </header>
-    <section class="main-content">
-        <div class="announcement">
-            <h2>PAGONEIO</h2>
-            <p>??/07/2024</p>
-            <button class="release-button" style="background-color: gold;">Em Breve</button> <!-- Dourado -->
+    <div class="background-image">
+           
         </div>
         <div class="projects">
-            <h2>Meus Projetos</h2>
             <div class="project-cards">
+                <div class="card">
+                    <img src="F/Wiki.jpg" alt="Wiki">
+                    <a href="personagens.html"><button class="release-button" style="background-color: #1e88e5;">Wiki</button></a> <!-- Azul escuro -->
+                </div>
                 <div class="card">
                     <img src="F/pagoneio.jpg" alt="Pagoneio">
                     <a href="pagoneio.html"><button class="release-button" style="background-color: #1e88e5;">Pagoneio</button></a> <!-- Azul escuro -->
@@ -186,11 +185,11 @@
                 </div>
             </div>
         </div>
-        <div class="personagens-title">
-            <h1>Personagens</h1>
-        </div>
-        <div class="background-image">
-            <a href="personagens.html" class="background-link">personagens.html</a>
+        <section class="main-content">
+        <div class="announcement">
+            <h2>PAGONEIO</h2>
+            <p>??/07/2024</p>
+            <button class="release-button" style="background-color: gold;">Em Breve</button> <!-- Dourado -->
         </div>
     </section>
     <footer>
