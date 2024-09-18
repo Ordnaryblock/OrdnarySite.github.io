@@ -125,6 +125,9 @@
             background-image: url('F/ord.png'); /* Caminho da imagem de fundo */
             background-size: cover;
             background-position: center;
+            display: flex; /* Para centralização flexível */
+            align-items: center; /* Centraliza verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
         }
 
         .background-link {
@@ -148,25 +151,15 @@
             position: relative; /* Ajustado para manter o footer no fluxo normal do documento */
             bottom: 0; /* Garante que o footer fique no final da página */
         }
- color: white; /* Altera a cor do texto para branco */
-    font-size: 24px; /* Ajusta o tamanho da fonte para ficar maior */
-    text-align: center; /* Centraliza o texto horizontalmente */
-    position: relative;
-    top: 50%; /* Centraliza o texto verticalmente */
-    transform: translateY(-50%); /* Ajuste fino para centralização vertical */
-    width: 100%; /* Garante que o texto ocupe toda a largura do container */
-    font-weight: bold; /* Deixa o texto em negrito para maior destaque */
-}
-#h2 {
-    color: white; /* Altera a cor do texto para branco */
-    font-size: 24px; /* Ajusta o tamanho da fonte para ficar maior */
-    text-align: center; /* Centraliza o texto horizontalmente */
-    font-weight: bold; /* Torna o texto negrito */
-    position: relative;
-    top: 50%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajuste para centralização vertical */
-    width: 100%; /* Garante que o texto ocupe a largura total do container */
-}
+
+        /* CSS para o h2 no background azul */
+        .background-image h2 {
+            color: white; /* Altera a cor do texto para branco */
+            font-size: 28px; /* Ajusta o tamanho da fonte para maior */
+            text-align: center; /* Centraliza o texto horizontalmente */
+            font-weight: bold; /* Deixa o texto negrito */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra no texto para destaque */
+        }
     </style>
 </head>
 <body>
@@ -181,36 +174,40 @@
             <img src="F/youtube-icon.png" alt="YouTube Icon" class="youtube-pic">
         </div>
     </header>
+    
     <div class="background-image">
-           <h2> Bem-vindo ao OrdnarySite Aqui você encontrará uma apresentação completa dos meus projetos, onde compartilho conteúdos de minhas historias, jogos e coisas do Canal do Youtube e muito mais! </h2>
-        </div>
-        <div class="projects">
-            <div class="project-cards">
-                <div class="card">
-                    <img src="F/Wiki.jpg" alt="Wiki">
-                    <a href="personagens.html"><button class="release-button" style="background-color: #1e88e5;">Wiki</button></a> <!-- Azul escuro -->
-                </div>
-                <div class="card">
-                    <img src="F/pagoneio.jpg" alt="Pagoneio">
-                    <a href="pagoneio.html"><button class="release-button" style="background-color: #1e88e5;">Pagoneio</button></a> <!-- Azul escuro -->
-                </div>
-                <div class="card">
-                    <img src="F/ordnary-filmes.jpg" alt="Filmes">
-                    <a href="filmes.html"><button class="release-button" style="background-color: #1e88e5;">Filmes</button></a> <!-- Azul escuro -->
-                </div>
-                <div class="card">
-                    <img src="F/orday-jogos.jpg" alt="Jogos">
-                    <a href="jogos.html"><button class="release-button" style="background-color: #1e88e5;">Jogos</button></a> <!-- Azul escuro -->
-                </div>
+        <h2>Bem-vindo ao OrdnarySite! Aqui você encontrará uma apresentação completa dos meus projetos, onde compartilho conteúdos de minhas histórias, jogos e coisas do Canal do Youtube e muito mais!</h2>
+    </div>
+
+    <div class="projects">
+        <div class="project-cards">
+            <div class="card">
+                <img src="F/Wiki.jpg" alt="Wiki">
+                <a href="personagens.html"><button class="release-button" style="background-color: #1e88e5;">Wiki</button></a>
+            </div>
+            <div class="card">
+                <img src="F/pagoneio.jpg" alt="Pagoneio">
+                <a href="pagoneio.html"><button class="release-button" style="background-color: #1e88e5;">Pagoneio</button></a>
+            </div>
+            <div class="card">
+                <img src="F/ordnary-filmes.jpg" alt="Filmes">
+                <a href="filmes.html"><button class="release-button" style="background-color: #1e88e5;">Filmes</button></a>
+            </div>
+            <div class="card">
+                <img src="F/orday-jogos.jpg" alt="Jogos">
+                <a href="jogos.html"><button class="release-button" style="background-color: #1e88e5;">Jogos</button></a>
             </div>
         </div>
-        <section class="main-content">
+    </div>
+
+    <section class="main-content">
         <div class="announcement">
             <h2>PAGONEIO</h2>
             <p>??/07/2024</p>
-            <button class="release-button" style="background-color: gold;">Em Breve</button> <!-- Dourado -->
+            <button class="release-button" style="background-color: gold;">Em Breve</button>
         </div>
     </section>
+    
     <footer>
         <p>&copy; ORDNARYBLOCK 2024</p>
     </footer>
