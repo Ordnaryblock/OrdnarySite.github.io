@@ -13,6 +13,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            overflow: hidden; /* Para garantir que a animação não ultrapasse a tela */
         }
 
         header {
@@ -25,6 +26,72 @@
         header h1 {
             margin: 0;
             font-size: 2em;
+        }
+
+        .logo-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .logo, .logo-extra1, .logo-extra2 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            opacity: 0;
+        }
+
+        .logo {
+            animation: logo-appear 2s forwards;
+        }
+
+        .logo-extra1 {
+            animation: logo-replace 2s 2s forwards, logo-move-left 2s 4s forwards;
+        }
+
+        .logo-extra2 {
+            animation: logo-final 2s 6s forwards;
+        }
+
+        @keyframes logo-appear {
+            0% {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes logo-replace {
+            0% {
+                opacity: 0;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes logo-move-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes logo-final {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
 
         .main-content {
@@ -112,6 +179,12 @@
 <body>
     <header>
         <h1>Jogos Ordnary</h1>
+        <!-- Animação das logos -->
+        <div class="logo-container">
+            <img src="Orday-Ls.png" alt="Orday Ls" class="logo">
+            <img src="Orday.logo.png" alt="Orday Logo" class="logo-extra1">
+            <img src="orday-studios.png" alt="Orday Studios" class="logo-extra2">
+        </div>
         <!-- Link com imagem para voltar à página principal -->
         <a href="index.html" class="voltar-home">
             <img src="F/house.png" alt="Voltar Para Página Principal">
