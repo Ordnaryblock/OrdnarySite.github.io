@@ -17,19 +17,21 @@
             background-color: #f4f4f4;
         }
 
-        header {
-            padding: 0 20px; 
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-image: url('F/header-background.jpg'); /* Caminho ajustado para o background do header */
-            background-size: cover; 
-            background-position: center; 
-            height: 100px; 
-            position: relative; /* Adicionado para posicionamento absoluto */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
-        }
+    header {
+    padding: 0 20px; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('F/header-background.jpg'); /* Certifique-se que o caminho está correto */
+    background-size: cover; 
+    background-position: center; 
+    height: 100px; 
+    position: relative; /* "relative" está correto para contexto de sombra */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra ajustada para ser mais perceptível */
+    z-index: 10; /* Adicionado para garantir que o cabeçalho fique acima de outros elementos */
+}
+
 
         .profile-container, .youtube-container {
             position: absolute; /* Posicionamento absoluto para os ícones */
