@@ -115,8 +115,8 @@
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s ease;
             position: absolute;
-            top: 250px;
-            right: 500px;
+            top: 325px;
+            right: 420px;
         }
          .release-buttonB {
             background-color: #ff9800;
@@ -182,7 +182,8 @@
         .card {
             text-align: right;
             width: 20%;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
+            margin-top: 35px;
             align-items: center;
            
         }
@@ -202,6 +203,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 0px;
         }
 
         .background-image h2 {
@@ -231,15 +233,34 @@
             font-size: 14px;
             margin: 0;
         }
-         .projet {
+          .projett {
+            color: black;
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0,5);
             display: center;
             align-items: center;
-            padding: 0 90px; 
             border-radius: 10px;
             flex-grow: 1;
             text-align: center;
+               margin: 0;
+            padding: 0px;
         }
+       .projet {
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    display: flex; /* 'center' não é válido, corrigido para 'flex' */
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    flex-grow: 1;
+    text-align: center;
+    margin: 0; /* Remove margens extras */
+    padding: 0; /* Remove paddings extras */
+    background-image: url('F/ascensao-background.jpg');
+    background-size: cover; /* Faz o fundo cobrir todo o elemento */
+    background-position: center; /* Centraliza o fundo */
+    height: 10vh; /* Garante que a altura cubra a janela inteira */
+}
+
+
          .project-description {
             color: white;
             font-size: 20px;
@@ -249,7 +270,7 @@
             padding-left: 300px;
             position: absolute;
             text-align: right;
-            top: 20px;
+            top: 100px;
             left 90px;
         }
          .project-title {
@@ -261,7 +282,7 @@
             padding-left: 670px;
             position: absolute;
             text-align: right;
-            top: 1px;
+            top: 50px;
             left 90px;
         }
          .imagenn {
@@ -272,8 +293,16 @@
             margin: 0;
             padding: 0;
             display: block;  /* Certifica-se de que a div se comporta como um bloco */
-}
         }
+          .imagennn {
+            background-image: url('F/ascensao-background.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;  /* Garantir que a largura ocupe toda a tela */
+            margin: 0;
+            padding: 0;
+            display: block;  /* Certifica-se de que a div se comporta como um bloco */
+}
     </style>
 </head>
 <body>
@@ -300,7 +329,7 @@
             <div class="imagenn">
             <div class="card">
                 <img src="F/Wiki.jpg" alt="Wiki">
-                <a href="personagens.html"><button class="release-button" style="background-color: #1e88e5;">Wiki</button></a> <p class="project-description">Bem-vindo à nossa seção dedicada aos personagens! Aqui, você encontrará uma lista completa e detalhada dos personagens que fazem parte de nossas histórias, jogos e mundos. Cada personagem possui uma biografia única, com informações sobre sua origem, habilidades, personalidade, motivações e muito mais. Descubra suas histórias, explore suas conexões com outros personagens e entenda o papel que desempenham no universo em que vivem. Se você é um fã de histórias ricas em personagens profundos e complexos, esta seção será seu ponto de referência para tudo sobre eles!
+                <a href="personagens.html"><button class="release-button" style="background-color: #1e88e5;">Clique aqui para acessar a Wiki</button></a> <p class="project-description">Bem-vindo à nossa seção dedicada aos personagens! Aqui, você encontrará uma lista completa e detalhada dos personagens que fazem parte de nossas histórias, jogos e mundos. Cada personagem possui uma biografia única, com informações sobre sua origem, habilidades, personalidade, motivações e muito mais. Descubra suas histórias, explore suas conexões com outros personagens e entenda o papel que desempenham no universo em que vivem. Se você é um fã de histórias ricas em personagens profundos e complexos, esta seção será seu ponto de referência para tudo sobre eles!
  </p> <h3 class="project-title"> Wiki Dos Personagens </h3>
             </div>
             <div class="card">
@@ -317,8 +346,10 @@
             </div>
         </div>
     </div>
-<div>
-
+  <div class="projett">
+   <div class="i">
+     <h1>Anuncio Da Pagoneio</h1>
+    </div>
     <section class="main-content">
         <div class="announcement">
             <h2>PAGONEIO</h2>
