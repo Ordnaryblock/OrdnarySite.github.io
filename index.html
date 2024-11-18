@@ -380,29 +380,30 @@
             padding: 0;
             display: block;  /* Certifica-se de que a div se comporta como um bloco */
          }  
-        .left {
-            padding: 20px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0;
-             width: 50px;
-            height: auto;
-            position: fixed;
-              bottom: auto;
-            padding-right: 200px;
-        }
-         .right {
-            padding: 20px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0;
-             width: 50px;
-            height: auto;
-            position: fixed;
-            padding-left: 200px;
-        }
+       .left {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente no espaço dado */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    margin: 0;
+    width: 50px; /* Largura da imagem */
+    height: auto; /* Altura automática */
+    position: absolute; /* Posiciona de acordo com o pai ou o container */
+    left: 20px; /* Mantém o troféu à esquerda */
+    bottom: 20px; /* Alinha a imagem perto da parte inferior da tela */
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 50px;
+    height: auto;
+    position: absolute;
+    right: 20px; /* Mantém o troféu à direita */
+    bottom: 20px;
+}
+
     </style>
 </head>
 <body>
