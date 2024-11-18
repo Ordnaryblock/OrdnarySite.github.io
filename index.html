@@ -77,16 +77,34 @@
             padding: 0;
         }
 
-        .announcement {
-            padding: 80px;
-            margin: 0;
-            border-radius: 0;
-            color: white;
-            text-shadow: 1px 1px 2px black;
-            background-image: url('F/announcement-background.jpg');
-            background-size: cover;
-            background-position: center;
-        }
+     .announcement {
+    position: relative; /* Torna o contêiner o referencial para os elementos absolutos */
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; /* Largura máxima da seção */
+}
+
+.left {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente na seção */
+    left: -70px; /* Ajusta a posição horizontal (fora da área principal, para a esquerda) */
+    transform: translateY(-50%); /* Garante alinhamento vertical perfeito */
+    width: 50px; /* Ajuste de tamanho */
+    height: auto;
+}
+
+.right {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente na seção */
+    right: -70px; /* Ajusta a posição horizontal (fora da área principal, para a direita) */
+    transform: translateY(-50%); /* Garante alinhamento vertical perfeito */
+    width: 50px; /* Ajuste de tamanho */
+    height: auto;
+}
+
         
          .release-buttonp {
             background-color: #ff9800;
@@ -380,30 +398,6 @@
             padding: 0;
             display: block;  /* Certifica-se de que a div se comporta como um bloco */
          }  
-       .left {
-    display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente no espaço dado */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    margin: 0;
-    width: 50px; /* Largura da imagem */
-    height: auto; /* Altura automática */
-    position: absolute; /* Posiciona de acordo com o pai ou o container */
-    left: 20px; /* Mantém o troféu à esquerda */
-    bottom: 20px; /* Alinha a imagem perto da parte inferior da tela */
-}
-
-.right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    width: 50px;
-    height: auto;
-    position: absolute;
-    right: 20px; /* Mantém o troféu à direita */
-    bottom: 20px;
-}
-
     </style>
 </head>
 <body>
@@ -454,16 +448,15 @@
    <div class="i">
      <h1>Anuncio Da Pagoneio</h1>
     </div>
-    <section class="main-content">
-        <div class="announcement">
-            <img class="left" src="F/trophy1.png" alt="Troféu">
-             <img class="right" src="F/trophy2.png" alt="Troféu">
-            <h2>O Pagoneio é um torneio de PvP valendo uma fruta no jogo Blox Fruits, realizado no Coliseu com um formato de mata-mata, similar ao futebol. acontecerá em</h2>
-            <p>??/12/2024</p>
-            <button class="release-buttonp" style="background-color: gold;">Em Dezembro</button>
-        </div>
-    </section>
-    
+   <section class="main-content">
+    <div class="announcement">
+        <img class="left" src="F/trophy1.png" alt="Troféu">
+        <img class="right" src="F/trophy2.png" alt="Troféu">
+        <h2>O Pagoneio é um torneio de PvP valendo uma fruta no jogo Blox Fruits, realizado no Coliseu com um formato de mata-mata, similar ao futebol. Acontecerá em</h2>
+        <p>??/12/2024</p>
+        <button class="release-buttonp" style="background-color: gold;">Em Dezembro</button>
+    </div>
+</section> 
     <footer>
         <p>&copy; ORDNARYBLOCK 2024</p>
         <p class="privacy-text">Este site não coleta dados pessoais dos usuários.</p>
