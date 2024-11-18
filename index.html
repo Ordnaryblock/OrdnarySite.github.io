@@ -9,398 +9,6 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8897758866517582"
      crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-8897758866517582">
-    <style>
-       html, body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            overflow-x: hidden;
-            height: 100%;
-        }
-
-        header {
-            padding: 0 20px; 
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-image: url('F/header-background.jpg');
-            background-size: cover; 
-            background-position: center; 
-            height: 100px; 
-            position: relative; 
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-            z-index: 10;
-        }
-
-        .profile-container, .youtube-container {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .profile-container {
-            left: 20px;
-        }
-
-        .youtube-container {
-            right: 20px;
-        }
-
-        .youtube-pic, .profile-pic {
-            width: 80px;
-            height: 80px;
-            border-radius: 0;
-        }
-
-        .youtube-pic {
-            width: 135px;
-            height: 80px;
-        }
-
-        .header-content {
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
-            display: flex;
-            align-items: center;
-            padding: 0 90px; 
-            border-radius: 10px;
-            flex-grow: 1;
-        }
-
-        .header-content h1 {
-            margin: 0;
-        }
-
-        .main-content {
-            text-align: center;
-            padding: 0;
-        }
-
-     .announcement {
-    position: relative; /* Torna o contêiner o referencial para os elementos absolutos */
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px auto;
-    max-width: 800px; /* Largura máxima da seção */
-    background-image: url('F/announcement-background.jpg');
-            background-size: cover;
-            background-position: center;
-}
-
-.left {
-    position: absolute;
-    top: 50%; /* Centraliza verticalmente na seção */
-    left: -70px; /* Ajusta a posição horizontal (fora da área principal, para a esquerda) */
-    transform: translateY(-50%); /* Garante alinhamento vertical perfeito */
-    width: 120px; /* Ajuste de tamanho */
-    height: auto;
-}
-
-.right {
-    position: absolute;
-    top: 50%; /* Centraliza verticalmente na seção */
-    right: -70px; /* Ajusta a posição horizontal (fora da área principal, para a direita) */
-    transform: translateY(-50%); /* Garante alinhamento vertical perfeito */
-    width: 80px; /* Ajuste de tamanho */
-    height: auto;
-}
-
-        
-         .release-buttonp {
-            background-color: #ff9800;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-            position: relative;
-            top: autopx;
-            right: autopx;
-            z-index: auto;
-        }
-        
-        .release-button {
-            background-color: #ff9800;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-            position: absolute;
-            top: 325px;
-            right: 565px;
-        }
-         .release-buttonB {
-            background-color: gold;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-            position: absolute;
-            top: 840px;
-            right: 540px;
-        }
-         .release-buttonC {
-            background-color: #ff9800;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-            position: absolute;
-            bottom: 605px;
-            right: 555px;
-        }
-          .release-buttonD {
-            background-color: #ff9800;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-            position: absolute;
-            bottom: 120px;
-            right: 555px;
-        }
-        
-        .release-button:hover {
-            background-color: #e68900;
-        }
-
-        .projects {
-            margin: 0;
-            padding: 0px;
-            background-color: rgb(0, 0, 0);
-            border-radius: 0;
-        }
-
-        .project-cards {
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            position: relative;
-        }
-
-        .card {
-            text-align: right;
-            width: 20%;
-            margin-bottom: 35px;
-            margin-top: 35px;
-            align-items: center;
-        }
-
-        .card img {
-            width: 90%;
-            border-radius: 1px;
-        }
-
-        .background-image {
-            position: relative;
-            width: 100%;
-            height: 300px;
-            background-image: url('F/ord.png');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0px;
-        }
-
-        .background-image h2 {
-            color: white;
-            font-size: 25px;
-            text-align: center;
-            font-weight: bold;
-            padding: 5px;
-            padding-left: 100px;
-            padding-right: 100px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        footer {
-            background-color: #2e2e2e;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            width: 100%;
-            position: relative;
-            bottom: 0;
-            left: 0;
-            margin: auto;
-        }
-
-        .contact-info, .privacy-text {
-            font-size: 14px;
-            margin: 0;
-        }
-          .projett {
-            color: rgb(255, 255, 255);
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0,5);
-            display: center;
-            align-items: center;
-            border-radius: 10px;
-            flex-grow: 1;
-            text-align: center;
-               margin: 0;
-            padding: 0px;
-        }
-          .projet {
-            color: white;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-            display: flex; /* 'center' não é válido, corrigido para 'flex' */
-            justify-content: center; /* Alinha horizontalmente */
-            align-items: center; /* Alinha verticalmente */
-            flex-grow: 1;
-            text-align: center;
-            margin: 0; /* Remove margens extras */
-            padding: 0; /* Remove paddings extras */
-            background-image: url('F/ascensao-background.jpg');
-            background-size: cover; /* Faz o fundo cobrir todo o elemento */
-            background-position: center; /* Centraliza o fundo */
-            height: 10vh; /* Garante que a altura cubra a janela inteira */
-        }
-         .project-description {
-            color: white;
-            font-size: 20px;
-            text-align: right;
-            font-weight: bold;
-            padding: 40px;
-            padding-left: 300px;
-            position: absolute;
-            text-align: right;
-            top: 100px;
-            padding-left: 400px;
-             text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
-        }
-         .project-title {
-            color: white;
-            font-size: 25px;
-            text-align: right;
-            font-weight: bold;
-            padding-right: 40px;
-            padding-left: 670px;
-            position: absolute;
-            text-align: right;
-            top: 50px;
-            padding-left: 850px;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
-        }
-        .project-descriptionB {
-            color: white;
-            font-size: 20px;
-            text-align: right;
-            font-weight: bold;
-            padding: 40px;
-            padding-left: 300px;
-            position: absolute;
-            text-align: right;
-            top: 620px;
-            padding-left: 400px;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
-        }
-         .project-titleB {
-            color: white;
-            font-size: 25px;
-            text-align: right;
-            font-weight: bold;
-            padding-right: 40px;
-            padding-left: 670px;
-            position: absolute;
-            text-align: right;
-            top: 560px;
-            padding-left: 850px;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
-        }
-        .project-descriptionC {
-            color: white;
-            font-size: 20px;
-            text-align: right;
-            font-weight: bold;
-            padding: 40px;
-            padding-left: 300px;
-            position: absolute;
-            text-align: right;
-            bottom: 625px;
-            padding-left: 400px;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
-        }
-         .project-titleC {
-            color: white;
-            font-size: 25px;
-            text-align: right;
-            font-weight: bold;
-            padding-right: 40px;
-            padding-left: 670px;
-            position: absolute;
-            text-align: right;
-            bottom: 825px;
-            padding-left: 850px;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
-        }
-        .project-descriptionD {
-            color: white;
-            font-size: 20px;
-            text-align: right;
-            font-weight: bold;
-            padding: 40px;
-            padding-left: 300px;
-            position: absolute;
-            text-align: right;
-            bottom: 140px;
-            padding-left: 400px;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
-        }
-         .project-titleD {
-            color: white;
-            font-size: 25px;
-            text-align: right;
-            font-weight: bold;
-            padding-right: 40px;
-            padding-left: 670px;
-            position: absolute;
-            text-align: right;
-            bottom: 315px;
-            padding-left: 850px;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
-        }
-         .imagenn {
-            background-image: url('F/fundo.png');
-            background-size: cover;
-            background-position: center;
-            width: 100%;  /* Garantir que a largura ocupe toda a tela */
-            margin: 0;
-            padding: 0;
-            display: block;  /* Certifica-se de que a div se comporta como um bloco */
-        }
-          .imagennn {
-            background-image: url('F/ascensao-background.jpg');
-            background-size: cover;
-            background-position: center;
-            width: 100%;  /* Garantir que a largura ocupe toda a tela */
-            margin: 0;
-            padding: 0;
-            display: block;  /* Certifica-se de que a div se comporta como um bloco */
-         }  
-    </style>
 </head>
 <body>
     <header>
@@ -417,6 +25,75 @@
     
     <div class="background-image">
         <h2>Bem-vindo ao OrdnarySite! Aqui você pode descobrir como participar da Pagoneio (o Torneio de PvP do Blox Fruits) e explorar uma apresentação completa dos meus projetos. Compartilho conteúdos das minhas histórias, jogos, vídeos do meu Canal no YouTube e muito mais! Clique nos botões das seções para acessar o conteúdo de cada uma. </h2>
+    </div>
+    <div class="projett">
+        <div class="i">
+          <h1>Anuncio Da Pagoneio</h1>
+         </div>
+        <section class="main-content">
+         <div class="announcement">
+             <img class="left" src="F/trophy1.png" alt="Troféu">
+             <img class="right" src="F/trophy2.png" alt="Troféu">
+             <h2>O Pagoneio é um torneio de PvP valendo uma fruta no jogo Blox Fruits, realizado no Coliseu com um formato de mata-mata, similar ao futebol. Acontecerá em</h2>
+             <p>??/12/2024</p>
+             <button class="release-buttonp" style="background-color: gold;">Em Dezembro</button>
+         </div>
+     </section> 
+    <div class="container">
+        <div class="header">
+            <a href="https://discord.com/invite/NJgV4dxTZh">
+                <img class="left" src="F/trophy1.png" alt="Troféu">
+            </a>
+            <h1>𝑷𝒂𝒈𝒐𝒏𝒆𝒊𝒐</h1>
+            <a href="https://discord.com/invite/NJgV4dxTZh">
+                <img class="right" src="F/trophy2.png" alt="Troféu">
+            </a>
+        </div>
+        <div class="section">
+            <h4>Sobre o Pagoneio</h4>
+            <p>O Pagoneio é um torneio de PvP valendo uma fruta no jogo Blox Fruits, realizado no Coliseu com um formato de mata-mata, similar ao futebol.</p>
+            <h4>Como Participar?</h4>
+            <p>Para participar, clique nos troféus acima. Eles o levarão ao nosso servidor do Discord, onde as competições são organizadas.</p>
+            <h4>Regras do Torneio</h4>
+            <p>Cada partida será disputada  em um formato de melhor de três (MD3).</p>
+            <p>Não é permitido o uso de cheats, hacks ou qualquer forma de trapaça.</p>
+            <p>Respeito entre os participantes é obrigatório. Insultos ou comportamentos inadequados resultarão em desqualificação.</p>
+            <p>As Batalhas deverão ser feitas em 1v1 no Coliseu do 2 ou 1 Sea</p>
+            <p>terá o tempo limite de 3 minutos cada batalha ( fase de grupos ) 5 minutos as oitavas 7 minutos semis e final.</p>
+            <p>É proibido o uso de Transformação de Frutas ( exceto a Buddha )</p>
+            <p>O Uso da V4 só é permitida se os dois Participantes tiverem e se for a Última rodada no melhor de 3.</p>
+            <h4>Formato do Torneio</h4>
+            <p>Fase de Grupos: Todas as 8 equipes de 4 jogadores jogam entre si dentro do grupo. As duas melhores avançam.
+Eliminatórias: Sistema de eliminatória simples. Perdeu, está fora! Melhor de três (MD3)
+Grande Final: Melhor de Cinco (MD5) para determinar o campeão.</p>
+            <h4>Premiação:</h4>
+            <p>1º Lugar: Fruta do Torneio + Memorial + Vaga para a Super Pagoneio</p>
+            <h4>Sobre as Edições</h4>
+            <p>[2023] A primeira edição aconteceu em dezembro, valendo a fruta Rumble. Esperávamos 32 participantes, mas apenas 6 compareceram e 4 competiram, com Thz, um usuário de kitsune, sendo o campeão.</p>
+            <p>[1-2024] A edição do primeiro trimestre de 2024 valeu a fruta Control. Tivemos 8 participantes, com as quartas de final sendo disputadas, e Blitz foi o campeão.</p>
+            <p>[2-2024] A edição ira acontecer em Dezembro de 2024..</p>
+        </div>
+        <div class="section">
+            <h4>Sobre a Super Pagoneio e Edições</h4>
+            <p>A Super Pagoneio é uma disputa entre o campeão atual e o campeão anterior. Apenas uma pessoa pode possuir este título, ou seja, o campeão atual.</p>
+            <p>O primeiro campeão da Super Pagoneio foi Blitz, por W.O., devido a Thz, o primeiro campeão, ter passado a vitória para ele. (1-2024)</p>
+        </div>
+        <div class="super-campeao">
+            <h2>Super Campeão</h2>
+            <img src="F/blitz.png" alt="Super campeão Blitz">
+            <h3 class="winner-name">Blitz</h3>
+        </div>
+        <div class="campeoes">
+            <h3>Campeões</h3>
+            <div class="campeao">
+                <img src="F/thz.png" alt="Thz 2023">
+                <p>Thz | 2023</p>
+            </div>
+            <div class="campeao">
+                <img src="F/blitz.png" alt="Blitz 1-2024">
+                <p>Blitz | 1-2024</p>
+            </div>
+        </div>
     </div>
    <div class="projet">
      <h1>Meus Projetos</h1>
@@ -446,19 +123,6 @@
             </div>
         </div>
     </div>
-  <div class="projett">
-   <div class="i">
-     <h1>Anuncio Da Pagoneio</h1>
-    </div>
-   <section class="main-content">
-    <div class="announcement">
-        <img class="left" src="F/trophy1.png" alt="Troféu">
-        <img class="right" src="F/trophy2.png" alt="Troféu">
-        <h2>O Pagoneio é um torneio de PvP valendo uma fruta no jogo Blox Fruits, realizado no Coliseu com um formato de mata-mata, similar ao futebol. Acontecerá em</h2>
-        <p>??/12/2024</p>
-        <button class="release-buttonp" style="background-color: gold;">Em Dezembro</button>
-    </div>
-</section> 
     <footer>
         <p>&copy; ORDNARYBLOCK 2024</p>
         <p class="privacy-text">Este site não coleta dados pessoais dos usuários.</p>
@@ -466,4 +130,3 @@
     </footer>
 </body>
 </html>
-
