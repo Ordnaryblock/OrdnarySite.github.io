@@ -284,6 +284,7 @@ footer {
     padding-right: 40px;
     padding-left: 670px;
     text-align: right;
+    position: absolute;
     top: 50px;
     padding-left: 850px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
@@ -297,6 +298,7 @@ footer {
     padding-left: 300px;
     text-align: right;
     top: 620px;
+    position: absolute;
     padding-left: 400px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
 }
@@ -309,6 +311,7 @@ footer {
     padding-left: 670px;
     text-align: right;
     top: 560px;
+    position: absolute;
     padding-left: 850px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
 }
@@ -321,6 +324,7 @@ footer {
     padding-left: 300px;
     text-align: right;
     bottom: 625px;
+    position: absolute;
     padding-left: 400px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
 }
@@ -333,6 +337,7 @@ footer {
     padding-left: 670px;
     text-align: right;
     bottom: 825px;
+    position: absolute;
     padding-left: 850px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
 }
@@ -345,6 +350,7 @@ footer {
     padding-left: 300px;
     text-align: right;
     bottom: 140px;
+    position: absolute;
     padding-left: 400px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
 }
@@ -357,6 +363,7 @@ footer {
     padding-left: 670px;
     text-align: right;
     bottom: 315px;
+    position: absolute;
     padding-left: 850px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
 }
