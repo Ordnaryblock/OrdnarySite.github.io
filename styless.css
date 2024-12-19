@@ -1,0 +1,519 @@
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    padding: 0 20px; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('F/header-background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    height: 100px; 
+    position: relative; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: padding 0.3s ease, background-color 0.3s ease;
+    z-index: 10;
+}
+
+.profile-container, .youtube-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.profile-container {
+    left: 20px;
+}
+
+.youtube-container {
+    right: 20px;
+}
+
+.youtube-pic, .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 0;
+}
+
+.youtube-pic {
+    width: 135px;
+    height: 80px;
+}
+
+.header-content {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
+    display: flex;
+    align-items: center;
+    padding: 0 90px; 
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.header-content h1 {
+    margin: 0;
+}
+
+.main-content {
+    text-align: center;
+    padding: 0;
+}
+
+.announcement {
+position: relative; /* Torna o contêiner o referencial para os elementos absolutos */
+text-align: center;
+padding: 20px;
+border-radius: 10px;
+margin: 10px auto;
+max-width: 800px; /* Largura máxima da seção */
+background-image: url('F/announcement-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.left {
+position: absolute;
+top: 50%; /* Centraliza verticalmente na seção */
+left: -70px; /* Ajusta a posição horizontal (fora da área principal, para a esquerda) */
+transform: translateY(-50%); /* Garante alinhamento vertical perfeito */
+width: 120px; /* Ajuste de tamanho */
+height: auto;
+}
+
+.right {
+position: absolute;
+top: 50%; /* Centraliza verticalmente na seção */
+right: -70px; /* Ajusta a posição horizontal (fora da área principal, para a direita) */
+transform: translateY(-50%); /* Garante alinhamento vertical perfeito */
+width: 80px; /* Ajuste de tamanho */
+height: auto;
+}
+
+
+ .release-buttonp {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: autopx;
+    right: autopx;
+    z-index: auto;
+}
+
+.release-button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 325px;
+    right: 565px;
+}
+ .release-buttonB {
+    background-color: gold;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 840px;
+    right: 540px;
+}
+ .release-buttonC {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 605px;
+    right: 555px;
+}
+  .release-buttonD {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 120px;
+    right: 555px;
+}
+
+.release-button:hover {
+    background-color: #e68900;
+}
+
+.projects {
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+}
+
+.card {
+    text-align: right;
+    width: 20%;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    align-items: center;
+}
+
+.card img {
+    width: 90%;
+    border-radius: 1px;
+}
+
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url('F/ord.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.background-image h2 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    background-color: #2e2e2e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.contact-info, .privacy-text {
+    font-size: 14px;
+    margin: 0;
+}
+  .projett {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0,5);
+    display: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-grow: 1;
+    text-align: center;
+       margin: 0;
+    padding: 0px;
+}
+  .projet {
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    display: flex; /* 'center' não é válido, corrigido para 'flex' */
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    flex-grow: 1;
+    text-align: center;
+    margin: 0; /* Remove margens extras */
+    padding: 0; /* Remove paddings extras */
+    background-image: url('F/ascensao-background.jpg');
+    background-size: cover; /* Faz o fundo cobrir todo o elemento */
+    background-position: center; /* Centraliza o fundo */
+    height: 10vh; /* Garante que a altura cubra a janela inteira */
+}
+ .project-description {
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+    padding: 40px;
+    padding-left: 300px;
+    position: absolute;
+    text-align: right;
+    top: 100px;
+    padding-left: 400px;
+     text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
+}
+ .project-title {
+    color: white;
+    font-size: 25px;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 40px;
+    padding-left: 670px;
+    position: absolute;
+    text-align: right;
+    top: 50px;
+    padding-left: 850px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
+}
+.project-descriptionB {
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+    padding: 40px;
+    padding-left: 300px;
+    position: absolute;
+    text-align: right;
+    top: 620px;
+    padding-left: 400px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
+}
+ .project-titleB {
+    color: white;
+    font-size: 25px;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 40px;
+    padding-left: 670px;
+    position: absolute;
+    text-align: right;
+    top: 560px;
+    padding-left: 850px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
+}
+.project-descriptionC {
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+    padding: 40px;
+    padding-left: 300px;
+    position: absolute;
+    text-align: right;
+    bottom: 625px;
+    padding-left: 400px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
+}
+ .project-titleC {
+    color: white;
+    font-size: 25px;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 40px;
+    padding-left: 670px;
+    position: absolute;
+    text-align: right;
+    bottom: 825px;
+    padding-left: 850px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
+}
+.project-descriptionD {
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+    padding: 40px;
+    padding-left: 300px;
+    position: absolute;
+    text-align: right;
+    bottom: 140px;
+    padding-left: 400px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
+}
+ .project-titleD {
+    color: white;
+    font-size: 25px;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 40px;
+    padding-left: 670px;
+    position: absolute;
+    text-align: right;
+    bottom: 315px;
+    padding-left: 850px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
+}
+ .imagenn {
+    background-image: url('F/fundo.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;  /* Garantir que a largura ocupe toda a tela */
+    margin: 0;
+    padding: 0;
+    display: block;  /* Certifica-se de que a div se comporta como um bloco */
+}
+  .imagennn {
+    background-image: url('F/ascensao-background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;  /* Garantir que a largura ocupe toda a tela */
+    margin: 0;
+    padding: 0;
+    display: block;  /* Certifica-se de que a div se comporta como um bloco */
+ }  
+
+
+ .super-campeao {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0;
+    margin: 0;
+    background-image: url('F/super-background-image.jpg'); /* Caminho da imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.super-campeao h2 {
+    font-size: 2em;
+    margin: 0;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.super-campeao img {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.super-campeao .winner-name {
+    font-size: 2em;
+    color: #fff;
+}
+
+.campeoes {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0;
+    margin: 0;
+    background-image: url('F/background-image.jpg'); /* Caminho da imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.campeoes h3 {
+    font-size: 2em;
+    margin: 0 0 20px;
+}
+
+.campeoes .campeao {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+}
+
+.campeoes .campeao img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.campeoes .campeao p {
+    background-color: #ff6a00;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0 0;
+}
+
+.section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: left;
+    border-top: 2px solid #fff; /* Linha de separação */
+}
+
+.section h4 {
+    color: #f8b400;
+    margin: 0 0 10px;
+}
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: #333;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.header img {
+    width: 50px;
+    height: auto;
+}
+
+.header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 3em;
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: #000;
+    color: #ffcc00;
+    text-align: center;
+    padding: 20px 0;
+}
