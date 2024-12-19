@@ -124,7 +124,6 @@ height: auto;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    position: fixed;
     top: 325px;
     right: 565px;
 }
@@ -138,7 +137,6 @@ height: auto;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    position: fixed;
     top: 840px;
     right: 540px;
 }
@@ -152,7 +150,6 @@ height: auto;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    position: fixed;
     bottom: 605px;
     right: 555px;
 }
@@ -166,7 +163,6 @@ height: auto;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    position: fixed;
     bottom: 120px;
     right: 555px;
 }
@@ -275,7 +271,6 @@ footer {
     font-weight: bold;
     padding: 40px;
     padding-left: 300px;
-    position: fixed;
     text-align: right;
     top: 100px;
     padding-left: 400px;
@@ -288,7 +283,6 @@ footer {
     font-weight: bold;
     padding-right: 40px;
     padding-left: 670px;
-    position: absolute;
     text-align: right;
     top: 50px;
     padding-left: 850px;
@@ -301,7 +295,6 @@ footer {
     font-weight: bold;
     padding: 40px;
     padding-left: 300px;
-    position: absolute;
     text-align: right;
     top: 620px;
     padding-left: 400px;
@@ -314,7 +307,6 @@ footer {
     font-weight: bold;
     padding-right: 40px;
     padding-left: 670px;
-    position: fixed;
     text-align: right;
     top: 560px;
     padding-left: 850px;
@@ -327,7 +319,6 @@ footer {
     font-weight: bold;
     padding: 40px;
     padding-left: 300px;
-    position: fixed;
     text-align: right;
     bottom: 625px;
     padding-left: 400px;
@@ -340,7 +331,6 @@ footer {
     font-weight: bold;
     padding-right: 40px;
     padding-left: 670px;
-    position: absolute;
     text-align: right;
     bottom: 825px;
     padding-left: 850px;
@@ -353,7 +343,6 @@ footer {
     font-weight: bold;
     padding: 40px;
     padding-left: 300px;
-    position: fixed;
     text-align: right;
     bottom: 140px;
     padding-left: 400px;
@@ -366,7 +355,6 @@ footer {
     font-weight: bold;
     padding-right: 40px;
     padding-left: 670px;
-    position: absolute;
     text-align: right;
     bottom: 315px;
     padding-left: 850px;
