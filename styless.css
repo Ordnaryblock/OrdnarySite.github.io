@@ -273,6 +273,7 @@ footer {
     padding-left: 300px;
     text-align: right;
     top: 100px;
+    position: absolute;
     padding-left: 400px;
      text-shadow: 3px 3px 6px rgba(0, 0, 0, 10);
 }
