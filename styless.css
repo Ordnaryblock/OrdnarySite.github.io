@@ -67,6 +67,27 @@ header {
     padding: 0;
 }
 
+.navbar {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px; /* Espaçamento entre os links */
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: gray;
+}
+
 .announcement {
 position: relative; /* Torna o contêiner o referencial para os elementos absolutos */
 text-align: center;
