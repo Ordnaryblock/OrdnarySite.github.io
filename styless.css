@@ -617,3 +617,44 @@ button {
         font-size: 14px;
     }
     }
+
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.container {
+    padding: 20px;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin: 5px;
+    }
+}
+
+body {
+    font-size: 16px; /* Tamanho padrão */
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ajuste para telas menores */
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Ajustes para tablets */
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para celulares */
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para dispositivos muito pequenos */
+}
+
+
