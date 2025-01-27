@@ -534,3 +534,86 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+    /* Tornar o site responsivo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Adicionar suporte para largura de tela pequena */
+header, .background-image, .container, .projett, .section {
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+/* Centralizar e ajustar textos */
+h1, h2, h3, h4, p {
+    text-align: justify;
+    margin: 10px 0;
+    word-break: break-word;
+}
+
+/* Corrigir imagens para dispositivos móveis */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Garantir que botões não saiam da tela */
+button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Navegação responsiva */
+.navbar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    color: #333;
+    border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajuste específico para telas menores */
+@media screen and (max-width: 768px) {
+    .profile-container {
+        text-align: center;
+    }
+
+    .announcement img {
+        max-width: 70%;
+    }
+
+    .super-campeao img,
+    .campeao img {
+        max-width: 50%;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+    }
