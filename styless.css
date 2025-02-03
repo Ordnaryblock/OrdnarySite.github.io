@@ -440,17 +440,17 @@ footer {
     color: #fff;
 }
 
+.campeoes-titulo {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
 .campeoes {
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: center;
+    display: flex;
+    justify-content: center; /* Centraliza os campeões */
+    align-items: flex-end; /* Alinha pela parte de baixo */
+    gap: 50px; /* Espaço entre os campeões */
     flex-wrap: wrap;
-    padding: 15px 0;
-    margin: 0;
-    background-image: url('F/background-image.jpg'); /* Caminho da imagem de fundo */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
 }
 
 .campeoes h3 {
@@ -458,42 +458,29 @@ footer {
     margin: 0 0 15px;
 }
 
-.campeoes {
-    display: flex;
-    justify-content: center; /* Centraliza os campeões */
-    align-items: flex-start; /* Alinha os campeões pelo topo */
-    gap: 50px; /* Espaço entre os campeões */
-    flex-wrap: wrap;
-    padding: 15px 0;
-    background-image: url('F/background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-}
-
 .campeoes .campeao {
     display: flex;
-    flex-direction: column; /* Organiza imagem em cima e nome embaixo */
+    flex-direction: column;
     align-items: center;
-    width: 20%; /* Define a largura */
     text-align: center;
+    width: 20%; /* Define o tamanho dos campeões */
 }
 
 
 .campeoes .campeao img {
-    width: 120px; /* Ajuste o tamanho das imagens */
+    width: 120px;
     height: 120px;
     border-radius: 10px;
 }
 
-campeoes .campeao p {
-    background-color: #ff6a00;
+.campeoes .campeao p {
+    background-color: #ff6a00; /* Fundo laranja */
     color: #fff;
-    padding: 5px;
+    padding: 8px 15px;
     border-radius: 5px;
     margin-top: 5px;
-    min-width: 120px; /* Define um tamanho mínimo */
-    text-align: center;
+    display: inline-block;
+    font-weight: bold;
 }
 
 .section {
@@ -545,8 +532,6 @@ body {
     flex-grow: 1;
     text-align: center;
 }
-
-
 
 footer {
     background-color: #000;
