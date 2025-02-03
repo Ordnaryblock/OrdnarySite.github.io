@@ -460,24 +460,33 @@ footer {
 
 .campeoes {
     display: flex;
-    justify-content: center; /* Alinha no centro */
-    gap: 2%; /* Espaço entre os elementos */
-    flex-wrap: wrap; /* Permite quebra em telas menores */
+    justify-content: center; /* Centraliza os campeões */
+    align-items: flex-start; /* Alinha os campeões pelo topo */
+    gap: 50px; /* Espaço entre os campeões */
+    flex-wrap: wrap;
+    padding: 15px 0;
+    background-image: url('F/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
 .campeoes .campeao {
-    width: 30%; /* Cada campeão ocupa 30% da linha (3 por linha) */
+    display: flex;
+    flex-direction: column; /* Organiza imagem em cima e nome embaixo */
+    align-items: center;
+    width: 20%; /* Define a largura */
     text-align: center;
 }
 
 
 .campeoes .campeao img {
-    width: 100px;
-    height: 100px;
+    width: 120px; /* Ajuste o tamanho das imagens */
+    height: 120px;
     border-radius: 10px;
 }
 
-.campeoes .campeao p {
+campeoes .campeao p {
     background-color: #ff6a00;
     color: #fff;
     padding: 5px;
@@ -485,8 +494,6 @@ footer {
     margin-top: 5px;
     min-width: 120px; /* Define um tamanho mínimo */
     text-align: center;
-    display: inline-block;
-    width: 150px; /* Define uma largura fixa para todos */
 }
 
 .section {
