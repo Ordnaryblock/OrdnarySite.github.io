@@ -440,6 +440,11 @@ footer {
     color: #fff;
 }
 
+.campeoes-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
 .campeoes-titulo {
     font-size: 3em;
     margin-bottom: 20px;
@@ -453,11 +458,6 @@ footer {
     flex-wrap: wrap;
 }
 
-.campeoes h3 {
-    font-size: 3em;
-    margin: 0 0 15px;
-}
-
 .campeoes .campeao {
     display: flex;
     flex-direction: column;
@@ -465,7 +465,6 @@ footer {
     text-align: center;
     width: 20%; /* Define o tamanho dos campeões */
 }
-
 
 .campeoes .campeao img {
     width: 120px;
@@ -481,6 +480,12 @@ footer {
     margin-top: 5px;
     display: inline-block;
     font-weight: bold;
+}
+
+/* Destaque para o campeão do ano atual */
+.campeoes .campeao.atual {
+    position: relative;
+    top: -40px; /* Sobe um pouco para destacar */
 }
 
 .section {
