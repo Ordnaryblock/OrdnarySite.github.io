@@ -443,6 +443,8 @@ footer {
 .campeoes {
     width: 100%;
     box-sizing: border-box;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 15px 0;
     margin: 0;
     background-image: url('F/background-image.jpg'); /* Caminho da imagem de fundo */
