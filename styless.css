@@ -443,7 +443,7 @@ footer {
 .campeoes {
     width: 100%;
     box-sizing: border-box;
-    padding: 20px 0;
+    padding: 15px 0;
     margin: 0;
     background-image: url('F/background-image.jpg'); /* Caminho da imagem de fundo */
     background-size: cover;
@@ -452,13 +452,13 @@ footer {
 }
 
 .campeoes h3 {
-    font-size: 2em;
-    margin: 0 0 20px;
+    font-size: 3em;
+    margin: 0 0 15px;
 }
 
 .campeoes .campeao {
     display: inline-block;
-    width: 15%;
+    width: 20%;
     margin: 0 1%;
 }
 
