@@ -482,7 +482,11 @@ footer {
     color: #fff;
     padding: 5px;
     border-radius: 5px;
-    margin: 5px 0 0;
+    margin-top: 5px;
+    min-width: 120px; /* Define um tamanho mínimo */
+    text-align: center;
+    display: inline-block;
+    width: 150px; /* Define uma largura fixa para todos */
 }
 
 .section {
