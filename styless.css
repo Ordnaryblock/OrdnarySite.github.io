@@ -458,11 +458,18 @@ footer {
     margin: 0 0 15px;
 }
 
-.campeoes .campeao {
-    display: inline-block;
-    width:5%;
-    margin: 0 0%;
+.campeoes {
+    display: flex;
+    justify-content: center; /* Alinha no centro */
+    gap: 2%; /* Espaço entre os elementos */
+    flex-wrap: wrap; /* Permite quebra em telas menores */
 }
+
+.campeoes .campeao {
+    width: 30%; /* Cada campeão ocupa 30% da linha (3 por linha) */
+    text-align: center;
+}
+
 
 .campeoes .campeao img {
     width: 100px;
