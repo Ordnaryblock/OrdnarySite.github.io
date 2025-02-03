@@ -458,7 +458,7 @@ footer {
 
 .campeoes .campeao {
     display: inline-block;
-    width: 30%;
+    width: 15%;
     margin: 0 1%;
 }
 
@@ -471,9 +471,9 @@ footer {
 .campeoes .campeao p {
     background-color: #ff6a00;
     color: #fff;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
-    margin: 10px 0 0;
+    margin: 5px 0 0;
 }
 
 .section {
